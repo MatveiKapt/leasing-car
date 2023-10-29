@@ -21,7 +21,7 @@ const updateValues = (data) => {
   termInput.value = data.TERM;
   contribution.textContent = data.CONTRIBUTION * data.COST;
   sumField.textContent = (data.CONTRIBUTION * data.COST) + (data.TERM * data.ON_MONTH);
-  onMonthFiled.textContent = data.COST - ((data.CONTRIBUTION * data.COST) * (data.PERCENT/(1 + data.PERCENT) - (data.TERM - 1)));
+  onMonthFiled.textContent = Math.round(data.COST - ((data.CONTRIBUTION * data.COST) * (data.PERCENT/(1 + data.PERCENT) - (data.TERM - 1))));
 };
 
 const costSlider = document.querySelector('#cost-slider');
