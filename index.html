@@ -130,7 +130,7 @@
             Получите машину за 5 дней
           </p>
 
-          <button class="button carousel__button" type="button" disabled="true">Оставить заявку</button>
+          <button class="button carousel__button" type="button" disabled>Оставить заявку</button>
         </li>
         
       </ul>
@@ -162,7 +162,7 @@
     </section>
 
     <section class="main__calculator calculator container">
-      <form class="calculator__form" action="#" methot="POST">
+      <form class="calculator__form" action="#" method="POST">
         <fieldset class="calculator__fieldset">
           <legend class="calculator__legend">
             <h2 class="calculator__title">
@@ -177,7 +177,7 @@
                 <span class="desktop-label">Стоимость автомобиля</span>
               </p>
               <label class="calculator__label">
-                <input class="calculator__input" id="cost-input" type="number" value="3300000" required>
+                <input class="calculator__input" id="cost-input" name="cost" type="number" value="3300000" required>
                 <span>₽</span>
               </label>
               <div class="calculator__slider" id="cost-slider"></div>
@@ -193,7 +193,7 @@
                   <span>₽</span>
                 </span>
                 <span class="calculator__contribution-input-wrapper">
-                  <input class="calculator__input calculator__input--contribution" type="number" value="10" min="10" max="60" required>
+                  <input class="calculator__input calculator__input--contribution" name="contribution-count" type="number" value="10" min="10" max="60" required>
                   <span>%</span>
                 </span>
               </label>
@@ -205,7 +205,7 @@
                 Срок лизинга
               </p>
               <label class="calculator__label">
-                <input id="term-input" class="calculator__input" type="number" min="1" max="60" value="60" required>
+                <input id="term-input" class="calculator__input" name="term" type="number" min="1" max="60" value="60" required>
                 <span>мес.</span>
               </label>
               <div class="calculator__slider" id="term-slider"></div>
